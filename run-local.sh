@@ -1,0 +1,1 @@
+python3 conversion.py -r inline SRR17981961.head
