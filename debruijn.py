@@ -25,15 +25,16 @@ def DeBruijnGrapher(streng, kmer):
     # Written by Ben Langmead and Jacob Pritt, copied from them
     # (not verbatim)
     nodes, edges = DeBruijnFromString(streng, kmer)
-    dot_str = "digraph 'DeBruijn graph' {\n"
+    dot_str = 'digraph "DeBruijn graph" {\n'
     for node in nodes:
-        dot_str += '   {} [label="{}"] ;\n'.format(node, node) 
+        dot_str += '    {} [label="{}"] ;\n'.format(node, node) 
     for source, destination in edges:
-        dot_str += '   {} -> {} ;\n'.format(source, destination)
+        dot_str += '    {} -> {} ;\n'.format(source, destination)
     return dot_str + '}\n'
 
 # print(DeBruijnGrapher("AABABABBABABABAAAB", 3))
 d = DeBruijnGrapher("AABABABBABABABAAAB", 3)
+print(d)
 dot = graphviz.Digraph(d, filename="debruijn.gv")
 dot.view()
 # print(dot)
