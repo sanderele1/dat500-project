@@ -1,0 +1,21 @@
+No configs found; falling back on auto-configuration
+No configs specified for hadoop runner
+Looking for hadoop binary in /usr/local/hadoop/bin...
+Found hadoop binary: /usr/local/hadoop/bin/hadoop
+Using Hadoop version 3.3.1
+Creating temp directory /tmp/conversion.ubuntu.20220301.171350.519641
+uploading working dir files to hdfs:///user/ubuntu/tmp/mrjob/conversion.ubuntu.20220301.171350.519641/files/wd...
+Copying other local files to hdfs:///user/ubuntu/tmp/mrjob/conversion.ubuntu.20220301.171350.519641/files/
+Running step 1 of 1...
+  packageJobJar: [/tmp/hadoop-unjar1244104163984217295/] [] /tmp/streamjob1258648886514595873.jar tmpDir=null
+  Connecting to ResourceManager at namenode/10.10.1.206:8032
+  Connecting to ResourceManager at namenode/10.10.1.206:8032
+  Error Launching job : Output directory hdfs://namenode:9000/dis_materials/output1 already exists
+  Streaming Command Failed!
+Attempting to fetch counters from logs...
+Can't fetch history log; missing job ID
+No counters found
+Scanning logs for probable cause of failure...
+Can't fetch history log; missing job ID
+Can't fetch task logs; missing application ID
+Step 1 of 1 failed: Command '['/usr/local/hadoop/bin/hadoop', 'jar', '/usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.3.1.jar', '-files', 'hdfs:///user/ubuntu/tmp/mrjob/conversion.ubuntu.20220301.171350.519641/files/wd/conversion.py#conversion.py,hdfs:///user/ubuntu/tmp/mrjob/conversion.ubuntu.20220301.171350.519641/files/wd/mrjob.zip#mrjob.zip,hdfs:///user/ubuntu/tmp/mrjob/conversion.ubuntu.20220301.171350.519641/files/wd/setup-wrapper.sh#setup-wrapper.sh', '-input', 'hdfs:///user/ubuntu/tmp/mrjob/conversion.ubuntu.20220301.171350.519641/files/SRR17981961.head', '-output', 'hdfs:///dis_materials/output1', '-mapper', '/bin/sh -ex setup-wrapper.sh python3 conversion.py --step-num=0 --mapper', '-reducer', '/bin/sh -ex setup-wrapper.sh python3 conversion.py --step-num=0 --reducer']' returned non-zero exit status 1280.

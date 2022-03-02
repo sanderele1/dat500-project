@@ -33,10 +33,12 @@ def DeBruijnGrapher(streng, kmer):
     return dot_str + '}\n'
 
 # print(DeBruijnGrapher("AABABABBABABABAAAB", 3))
-d = DeBruijnGrapher("AABABABBABABABAAAB", 3)
+d = DeBruijnGrapher("the_four_four_four_walk_horses_four", 4)
 print(d)
-dot = graphviz.Digraph(d, filename="debruijn.gv")
-dot.view()
+v, e = DeBruijnFromString("the_four_four_four_walk_horses_four", 4)
+print(e)
+# dot = graphviz.Digraph(d, filename="debruijn.gv")
+# dot.view()
 # print(dot)
 # doctest_mark_exe()
 # dot.render('debruijn.gv').replace('\\', '/')
