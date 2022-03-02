@@ -4,6 +4,8 @@ import mrjob.protocol
 
 import base64
 import io
+import gzip
+import json
 
 
 class MRStepFastqToJson(MRStep):
@@ -43,8 +45,6 @@ class MRStepFastqToJson(MRStep):
             }
             self.lines = []
 
-
-
 class MRStepJsonToG1(MRStep):
     def __init__(self, *args, **kwargs):
         MRStep.__init__(self, *args, mapper=self.mapper, **kwargs)
@@ -63,7 +63,7 @@ class MRStepJsonToG1(MRStep):
         elif basepair == "N":
             return 5
         else:
-            raise ValueError("Basepair was {}, which is not a subset of \"ATCG\"".format(basepair))
+            raise ValueError("Basepair was {}, which is not a subset of \"ATCGNP\"".format(basepair))
 
     def inv_map_basepair(basepair):
         if basepair == 0:
@@ -89,26 +89,32 @@ class MRStepJsonToG1(MRStep):
         gene = value['gene']
 
         gene_buffer = io.BytesIO()
+        # gene_gzip = gzip.GzipFile(fileobj=gene_buffer, mode="w") # Really makes no improvement
         for i in range(0, len(gene), 2):
             g0 = gene[i] 
             g1 = gene[i+1] if i < len(gene) - 1 else "P"
             byte = (MRStepJsonToG1.map_basepair(g0)) | (MRStepJsonToG1.map_basepair(g1) << 4)
             gene_buffer.write(bytes([byte]))
 
+        # gene_gzip.flush()
+
         gene_base64 = base64.b64encode(gene_buffer.getbuffer())
 
         quality = value['quality']
 
         quality_buffer = io.BytesIO()
+        quality_gzip = gzip.GzipFile(fileobj=quality_buffer, mode="w")
         for q in quality:
-            quality_buffer.write(bytes([ord(q) - 0x21]))
+            quality_gzip.write(bytes([ord(q) - 0x21]))
+
+        quality_gzip.flush()
 
         quality_base64 = base64.b64encode(quality_buffer.getbuffer())
 
-        return "G1", {'i': gene_def_identifier, 'g': gene_base64, 'q': quality_base64}
+        yield "G1", {'i': gene_def_identifier, 'g': gene_base64, 'q': quality_base64}
         # !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
-
-
+# IyMjIyMoKCgoKCcmKCgnKCgoKCcnKCgoKCgoKCgoKCgoJigoKCgoKCgoKCcmJygoKCgoJyUnKCgoKCgoKCgoKCgnKCgnKCgoKCgoKCgoKCQnKCgoKCgoKCgoJygoKCQkJyUnJicjJicoKB4nJyQnJycoJigoJigoKCcnKCgoKCgoKCgoKCgmKCgoKCgmKCcnKCgoKCgoJw==
+# DDDDDIIIIIIIIIIIIIIHIIIIIIIIIIIIIHIIIIHHIIIHIIHHGHIIIHHHHIIIIHHIIIIIIIHGHHHIIIIGIHIHIIGHIGHIIHIHHHIIIHHIHIIIIIIFHIHGIHHHHHIIIEHHHIHHHIIIIIIGHHHHIIIIIIC
 class MRJobFastqToIntermediate(MRJob):
     OUTPUT_PROTOCOL = mrjob.protocol.JSONProtocol
 

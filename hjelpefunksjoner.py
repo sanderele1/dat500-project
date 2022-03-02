@@ -1,4 +1,29 @@
 import random
+import numpy as np
+
+def generateGenomeAndReads(lengde, k, numreads=100, desiredseed=None):
+	"""
+	generateGenome generates a genome of length "lengde" and
+	also returns reads of length k from the genome.
+
+	param lengde: desired genome length.
+	param k: desired read lengths, with a default value of k=10, assuming
+	lengde > 10. If lengde < 10, a smaller value is used.
+	param numreads: desired number of reads with a default value of 100.
+	param desiredseed: seed to use for reproduciblity, default None.
+	return: returns a string consisting of the randomized assembly amd
+	a list consisting of all the reads.
+	"""
+	if desiredseed:
+		random.seed(desiredseed)
+	genome = "".join(random.choice("ACGT") for _ in range(lengde))
+	reads = []
+	for _ in range(numreads):
+		# startsequence for read
+		startseq = random.randrange(0, len(genome)-k+1)
+		reads.append(genome[startseq:startseq+k])
+	return genome, reads
+
 
 def getReadsAndQualities(filename):
 	"""
@@ -19,7 +44,6 @@ def getReadsAndQualities(filename):
 			elif count % 4 == 3:
 				qualities.append(line.rstrip('\n'))
 			count += 1
-	fil.close()
 	return reads, qualities
 
 def generateFASTQ(filename):
@@ -61,20 +85,25 @@ def printGCstatistics(genome):
 	print("Total bases in the genome: {}".format(len(genome)))
 	print("The GC content in the genome is: {}".format(GCcounter/len(genome)))
 
+if __name__ == "__main__":
+	
+	#######
+	# test GCstatistics
+	# genome = ""
+	# for i in range(0,1000000):
+	# 	genome += "ACGT"[random.randint(0,3)]
+	# printGCstatistics(genome)
 
-#######
-# test GCstatistics
-# genome = ""
-# for i in range(0,1000000):
-# 	genome += "ACGT"[random.randint(0,3)]
-# printGCstatistics(genome)
 
+	#######
+	# generate some "fastQ"-formated data for testing
+	# it's actually just a .txt file but formated like
+	# a fastQ-file :-)
+	# generateFastQ("test.txt")
+	# reads, qualities = getReadsAndQualities("test.txt")
+	# print(reads[:3])
+	# print(qualities[:3])
 
-#######
-# generate some "fastQ"-formated data for testing
-# it's actually just a .txt file but formated like
-# a fastQ-file :-)
-# generateFastQ("test.txt")
-# reads, qualities = getReadsAndQualities("test.txt")
-# print(reads[:3])
-# print(qualities[:3])
+	# genome, reads = generateGenomeAndReads(100000, 15, 1000)
+	# print(reads)
+	# print(genome)
