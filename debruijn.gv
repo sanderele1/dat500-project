@@ -1,0 +1,24 @@
+digraph "digraph 'DeBruijn graph' {
+   AA [label=\"AA\"] ;
+   AB [label=\"AB\"] ;
+   BA [label=\"BA\"] ;
+   BB [label=\"BB\"] ;
+   AA -> AB ;
+   AB -> BA ;
+   BA -> AB ;
+   AB -> BA ;
+   BA -> AB ;
+   AB -> BB ;
+   BB -> BA ;
+   BA -> AB ;
+   AB -> BA ;
+   BA -> AB ;
+   AB -> BA ;
+   BA -> AB ;
+   AB -> BA ;
+   BA -> AA ;
+   AA -> AA ;
+   AA -> AB ;
+}
+" {
+}
