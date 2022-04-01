@@ -1,0 +1,1 @@
+{"validation/accuracy": 0.7980769230769231, "validation/precision": 0.8216140743031639, "validation/recall": 0.7980769230769231, "validation/f1_score": 0.7625709640719754, "_wandb": {"runtime": 4}}

@@ -1,0 +1,4 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Config item 'max_depth' was locked by 'sweep' (ignored update).
+[34m[1mwandb[39m[22m: [33mWARNING[39m Config item 'n_estimators' was locked by 'sweep' (ignored update).
+/home/ubuntu/.local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1308: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))

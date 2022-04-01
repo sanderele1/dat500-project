@@ -1,0 +1,199 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.11
+    framework: sklearn
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    python_version: 3.8.10
+    start_time: 1648640397
+    t:
+      1:
+      - 5
+      2:
+      - 5
+      3:
+      - 2
+      4: 3.8.10
+      5: 0.12.11
+      8:
+      - 1
+      - 5
+    visualize:
+      Feature Importance:
+        panel_config:
+          fieldSettings:
+            label: Feature
+            value: Importance
+          panelDefId: wandb/bar/v0
+          stringSettings:
+            title: Feature Importance
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - fields: []
+                name: id
+              - fields: []
+                name: name
+              - fields: []
+                name: _defaultColorIndex
+              - args:
+                - name: tableKey
+                  value: Feature Importance_table
+                fields: []
+                name: summaryTable
+              name: runSets
+        panel_type: Vega2
+      Precision-Recall:
+        panel_config:
+          fieldSettings:
+            class: class
+            x: recall
+            y: precision
+          panelDefId: wandb/area-under-curve/v0
+          stringSettings:
+            title: Precision-Recall
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - fields: []
+                name: id
+              - fields: []
+                name: name
+              - fields: []
+                name: _defaultColorIndex
+              - args:
+                - name: tableKey
+                  value: Precision-Recall_table
+                fields: []
+                name: summaryTable
+              name: runSets
+        panel_type: Vega2
+      ROC Curve:
+        panel_config:
+          fieldSettings:
+            class: class
+            x: fpr
+            y: tpr
+          panelDefId: wandb/area-under-curve/v0
+          stringSettings:
+            title: ROC Curve
+            x-axis-title: False positive rate
+            y-axis-title: True positive rate
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - fields: []
+                name: id
+              - fields: []
+                name: name
+              - fields: []
+                name: _defaultColorIndex
+              - args:
+                - name: tableKey
+                  value: ROC Curve_table
+                fields: []
+                name: summaryTable
+              name: runSets
+        panel_type: Vega2
+      confusion Matrix:
+        panel_config:
+          fieldSettings:
+            Actual: Actual
+            Predicted: Predicted
+            nPredictions: nPredictions
+          panelDefId: wandb/confusion_matrix/v1
+          stringSettings:
+            title: ''
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - fields: []
+                name: id
+              - fields: []
+                name: name
+              - fields: []
+                name: _defaultColorIndex
+              - args:
+                - name: tableKey
+                  value: confusion Matrix_table
+                fields: []
+                name: summaryTable
+              name: runSets
+        panel_type: Vega2
+bootstrap:
+  desc: null
+  value: true
+ccp_alpha:
+  desc: null
+  value: 0.0
+class_weight:
+  desc: null
+  value: null
+criterion:
+  desc: null
+  value: gini
+max_depth:
+  desc: null
+  value: null
+max_features:
+  desc: null
+  value: auto
+max_leaf_nodes:
+  desc: null
+  value: null
+max_samples:
+  desc: null
+  value: null
+min_impurity_decrease:
+  desc: null
+  value: 0.0
+min_samples_leaf:
+  desc: null
+  value: 1
+min_samples_split:
+  desc: null
+  value: 2
+min_weight_fraction_leaf:
+  desc: null
+  value: 0.0
+n_estimators:
+  desc: null
+  value: 100
+n_jobs:
+  desc: null
+  value: null
+oob_score:
+  desc: null
+  value: false
+random_state:
+  desc: null
+  value: null
+verbose:
+  desc: null
+  value: 0
+warm_start:
+  desc: null
+  value: false

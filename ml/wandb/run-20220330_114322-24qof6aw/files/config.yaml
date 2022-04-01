@@ -1,0 +1,81 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.11
+    framework: sklearn
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    python_version: 3.8.10
+    start_time: 1648640602
+    t:
+      1:
+      - 5
+      2:
+      - 5
+      3:
+      - 2
+      - 19
+      4: 3.8.10
+      5: 0.12.11
+      8:
+      - 1
+      - 5
+bootstrap:
+  desc: null
+  value: true
+ccp_alpha:
+  desc: null
+  value: 0.0
+class_weight:
+  desc: null
+  value: null
+criterion:
+  desc: null
+  value: gini
+max_depth:
+  desc: null
+  value: 87
+max_features:
+  desc: null
+  value: auto
+max_leaf_nodes:
+  desc: null
+  value: null
+max_samples:
+  desc: null
+  value: null
+min_impurity_decrease:
+  desc: null
+  value: 0.0
+min_samples_leaf:
+  desc: null
+  value: 1
+min_samples_split:
+  desc: null
+  value: 2
+min_weight_fraction_leaf:
+  desc: null
+  value: 0.0
+model_type:
+  desc: null
+  value: random_forest
+n_estimators:
+  desc: null
+  value: 347
+n_jobs:
+  desc: null
+  value: null
+oob_score:
+  desc: null
+  value: false
+random_state:
+  desc: null
+  value: null
+verbose:
+  desc: null
+  value: 0
+warm_start:
+  desc: null
+  value: false

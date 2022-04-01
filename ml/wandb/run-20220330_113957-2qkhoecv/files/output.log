@@ -1,0 +1,4 @@
+validation/accuracy_score : 0.931843891402715
+validation/precision : 0.931686336138724
+validation/recall : 0.931843891402715
+validation/f1_score : 0.9317082546430002

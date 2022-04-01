@@ -1,0 +1,24 @@
+{
+    "os": "Linux-5.4.0-70-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2022-03-30T11:38:12.859292",
+    "startedAt": "2022-03-30T11:38:11.007485",
+    "docker": null,
+    "cpu_count": 1,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/home/ubuntu/.local/share/jupyter/runtime/kernel-abdca32a-2966-412d-9c38-b84e37572c97.json"
+    ],
+    "state": "running",
+    "program": "ml/W&B_and_University_of_Stavanger_Bean_Leaf_Classification.ipynb",
+    "root": "/home/ubuntu/project",
+    "git": {
+        "remote": "git@github.com:sanderele1/dat500-project.git",
+        "commit": "faec5f3fe36a379b8f19122537b324f47f355b09"
+    },
+    "email": "264854@stud.uis.no",
+    "host": "namenode",
+    "username": "ubuntu",
+    "executable": "/usr/bin/python3"
+}

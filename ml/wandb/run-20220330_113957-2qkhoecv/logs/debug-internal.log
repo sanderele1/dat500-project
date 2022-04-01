@@ -1,0 +1,294 @@
+2022-03-30 11:39:59,138 INFO    MainThread:291824 [internal.py:wandb_internal():92] W&B internal server running at pid: 291824, started at: 2022-03-30 11:39:59.138496
+2022-03-30 11:39:59,141 INFO    WriterThread:291824 [datastore.py:open_for_write():77] open: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/run-2qkhoecv.wandb
+2022-03-30 11:39:59,142 DEBUG   SenderThread:291824 [sender.py:send():235] send: header
+2022-03-30 11:39:59,142 DEBUG   SenderThread:291824 [sender.py:send():235] send: run
+2022-03-30 11:39:59,675 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: check_version
+2022-03-30 11:39:59,677 INFO    SenderThread:291824 [dir_watcher.py:__init__():169] watching files in: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files
+2022-03-30 11:39:59,677 INFO    SenderThread:291824 [sender.py:_start_run_threads():812] run started: 2qkhoecv with start time 1648640397
+2022-03-30 11:39:59,677 DEBUG   SenderThread:291824 [sender.py:send():235] send: summary
+2022-03-30 11:39:59,677 INFO    SenderThread:291824 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-30 11:39:59,677 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: check_version
+2022-03-30 11:39:59,789 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: run_start
+2022-03-30 11:39:59,790 DEBUG   HandlerThread:291824 [meta.py:__init__():37] meta init
+2022-03-30 11:39:59,790 DEBUG   HandlerThread:291824 [meta.py:__init__():51] meta init done
+2022-03-30 11:39:59,790 DEBUG   HandlerThread:291824 [meta.py:probe():211] probe
+2022-03-30 11:39:59,791 DEBUG   HandlerThread:291824 [meta.py:_setup_git():201] setup git
+2022-03-30 11:39:59,809 DEBUG   HandlerThread:291824 [meta.py:_setup_git():208] setup git done
+2022-03-30 11:39:59,809 DEBUG   HandlerThread:291824 [meta.py:_save_pip():55] save pip
+2022-03-30 11:39:59,810 DEBUG   HandlerThread:291824 [meta.py:_save_pip():69] save pip done
+2022-03-30 11:39:59,810 DEBUG   HandlerThread:291824 [meta.py:probe():249] probe done
+2022-03-30 11:39:59,823 DEBUG   SenderThread:291824 [sender.py:send():235] send: files
+2022-03-30 11:39:59,823 INFO    SenderThread:291824 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-03-30 11:39:59,837 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-30 11:39:59,838 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: stop_status
+2022-03-30 11:40:00,050 DEBUG   SenderThread:291824 [sender.py:send():235] send: telemetry
+2022-03-30 11:40:00,050 DEBUG   SenderThread:291824 [sender.py:send():235] send: config
+2022-03-30 11:40:00,572 INFO    Thread-11 :291824 [upload_job.py:push():137] Uploaded file /tmp/tmp6uvvc320wandb/5wsbuwh4-wandb-metadata.json
+2022-03-30 11:40:00,679 INFO    Thread-7  :291824 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/wandb-metadata.json
+2022-03-30 11:40:00,679 INFO    Thread-7  :291824 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/wandb-summary.json
+2022-03-30 11:40:00,679 INFO    Thread-7  :291824 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/requirements.txt
+2022-03-30 11:40:00,679 INFO    Thread-7  :291824 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/output.log
+2022-03-30 11:40:02,741 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: pause
+2022-03-30 11:40:02,741 INFO    HandlerThread:291824 [handler.py:handle_request_pause():659] stopping system metrics thread
+2022-03-30 11:40:02,808 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: resume
+2022-03-30 11:40:02,809 INFO    HandlerThread:291824 [handler.py:handle_request_resume():650] starting system metrics thread
+2022-03-30 11:40:02,811 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: pause
+2022-03-30 11:40:02,811 INFO    HandlerThread:291824 [handler.py:handle_request_pause():659] stopping system metrics thread
+2022-03-30 11:40:02,811 DEBUG   SenderThread:291824 [sender.py:send():235] send: summary
+2022-03-30 11:40:02,811 INFO    SenderThread:291824 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-30 11:40:02,812 DEBUG   SenderThread:291824 [sender.py:send():235] send: summary
+2022-03-30 11:40:02,812 INFO    SenderThread:291824 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-30 11:40:02,813 DEBUG   SenderThread:291824 [sender.py:send():235] send: summary
+2022-03-30 11:40:02,813 INFO    SenderThread:291824 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-30 11:40:02,813 DEBUG   SenderThread:291824 [sender.py:send():235] send: summary
+2022-03-30 11:40:02,813 INFO    SenderThread:291824 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-30 11:40:02,815 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: resume
+2022-03-30 11:40:02,815 INFO    HandlerThread:291824 [handler.py:handle_request_resume():650] starting system metrics thread
+2022-03-30 11:40:02,816 DEBUG   SenderThread:291824 [sender.py:send():235] send: stats
+2022-03-30 11:40:02,816 DEBUG   SenderThread:291824 [sender.py:send():235] send: stats
+2022-03-30 11:40:03,062 DEBUG   SenderThread:291824 [sender.py:send():235] send: config
+2022-03-30 11:40:03,443 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: log_artifact
+2022-03-30 11:40:03,443 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: log_artifact
+2022-03-30 11:40:03,679 INFO    Thread-7  :291824 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/wandb-summary.json
+2022-03-30 11:40:03,680 INFO    Thread-7  :291824 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/media/table/confusion Matrix_table_0_ed1cb8f6322f1ad8d43e.table.json
+2022-03-30 11:40:03,680 INFO    Thread-7  :291824 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/media
+2022-03-30 11:40:03,680 INFO    Thread-7  :291824 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/media/table
+2022-03-30 11:40:03,902 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-30 11:40:03,903 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: pause
+2022-03-30 11:40:03,903 INFO    HandlerThread:291824 [handler.py:handle_request_pause():659] stopping system metrics thread
+2022-03-30 11:40:03,921 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: resume
+2022-03-30 11:40:03,921 INFO    HandlerThread:291824 [handler.py:handle_request_resume():650] starting system metrics thread
+2022-03-30 11:40:04,598 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: log_artifact
+2022-03-30 11:40:04,679 INFO    Thread-7  :291824 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/output.log
+2022-03-30 11:40:04,680 INFO    Thread-7  :291824 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/media/table/ROC Curve_table_1_f3966126d7de1fa84cb3.table.json
+2022-03-30 11:40:04,680 INFO    Thread-7  :291824 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/media/table
+2022-03-30 11:40:05,048 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-30 11:40:05,050 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: pause
+2022-03-30 11:40:05,050 INFO    HandlerThread:291824 [handler.py:handle_request_pause():659] stopping system metrics thread
+2022-03-30 11:40:05,135 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: resume
+2022-03-30 11:40:05,136 INFO    HandlerThread:291824 [handler.py:handle_request_resume():650] starting system metrics thread
+2022-03-30 11:40:05,353 INFO    Thread-16 :291824 [upload_job.py:push():95] Uploaded file /home/ubuntu/.cache/wandb/artifacts/obj/md5/c4/27b9443809d688ab4a6807fa92a023
+2022-03-30 11:40:05,542 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: log_artifact
+2022-03-30 11:40:05,680 INFO    Thread-7  :291824 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/media/table/Precision-Recall_table_2_433d450f11f42e333204.table.json
+2022-03-30 11:40:05,680 INFO    Thread-7  :291824 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/media/table
+2022-03-30 11:40:05,972 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-30 11:40:05,974 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: pause
+2022-03-30 11:40:05,974 INFO    HandlerThread:291824 [handler.py:handle_request_pause():659] stopping system metrics thread
+2022-03-30 11:40:06,043 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: resume
+2022-03-30 11:40:06,044 INFO    HandlerThread:291824 [handler.py:handle_request_resume():650] starting system metrics thread
+2022-03-30 11:40:06,044 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: pause
+2022-03-30 11:40:06,044 INFO    HandlerThread:291824 [handler.py:handle_request_pause():659] stopping system metrics thread
+2022-03-30 11:40:06,047 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: resume
+2022-03-30 11:40:06,047 INFO    HandlerThread:291824 [handler.py:handle_request_resume():650] starting system metrics thread
+2022-03-30 11:40:06,504 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: log_artifact
+2022-03-30 11:40:06,543 INFO    SenderThread:291824 [sender.py:send_request_log_artifact():976] logged artifact run-2qkhoecv-confusionMatrix_table - {'id': 'QXJ0aWZhY3Q6MTA2NjE3NzE3', 'digest': '47906caab95c1bfaaebc49a27cd359b2', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NTIzMjE3', 'latestArtifact': None}, 'version': 'latest'}
+2022-03-30 11:40:06,543 DEBUG   SenderThread:291824 [sender.py:send():235] send: files
+2022-03-30 11:40:06,543 INFO    SenderThread:291824 [sender.py:_save_file():947] saving file media/table/confusion Matrix_table_0_ed1cb8f6322f1ad8d43e.table.json with policy now
+2022-03-30 11:40:06,544 DEBUG   SenderThread:291824 [sender.py:send():235] send: history
+2022-03-30 11:40:06,546 DEBUG   SenderThread:291824 [sender.py:send():235] send: summary
+2022-03-30 11:40:06,546 INFO    SenderThread:291824 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-30 11:40:06,547 DEBUG   SenderThread:291824 [sender.py:send():235] send: stats
+2022-03-30 11:40:06,547 DEBUG   SenderThread:291824 [sender.py:send():235] send: config
+2022-03-30 11:40:06,547 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: log_artifact
+2022-03-30 11:40:06,681 INFO    Thread-7  :291824 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/wandb-summary.json
+2022-03-30 11:40:06,681 INFO    Thread-7  :291824 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/media/table/Feature Importance_table_3_565d7590ee1f298cd1cd.table.json
+2022-03-30 11:40:06,682 INFO    Thread-7  :291824 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/media/table
+2022-03-30 11:40:06,960 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-30 11:40:06,962 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: pause
+2022-03-30 11:40:06,962 INFO    HandlerThread:291824 [handler.py:handle_request_pause():659] stopping system metrics thread
+2022-03-30 11:40:07,058 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: resume
+2022-03-30 11:40:07,058 INFO    HandlerThread:291824 [handler.py:handle_request_resume():650] starting system metrics thread
+2022-03-30 11:40:07,059 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-30 11:40:07,233 INFO    Thread-20 :291824 [upload_job.py:push():137] Uploaded file /tmp/tmp6uvvc320wandb/3pjvodq4-media/table/confusion Matrix_table_0_ed1cb8f6322f1ad8d43e.table.json
+2022-03-30 11:40:07,365 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:40:07,682 INFO    Thread-7  :291824 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/output.log
+2022-03-30 11:40:08,758 INFO    Thread-23 :291824 [upload_job.py:push():95] Uploaded file /home/ubuntu/.cache/wandb/artifacts/obj/md5/4a/eacbec70bd80aff20fdaa548034deb
+2022-03-30 11:40:09,875 INFO    SenderThread:291824 [sender.py:send_request_log_artifact():976] logged artifact run-2qkhoecv-ROCCurve_table - {'id': 'QXJ0aWZhY3Q6MTA2NjE3NzMz', 'digest': 'd9f7d2f4f8cb756a83ff7a15dc98e177', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NTIzMjIz', 'latestArtifact': None}, 'version': 'latest'}
+2022-03-30 11:40:09,876 DEBUG   SenderThread:291824 [sender.py:send():235] send: files
+2022-03-30 11:40:09,876 INFO    SenderThread:291824 [sender.py:_save_file():947] saving file media/table/ROC Curve_table_1_f3966126d7de1fa84cb3.table.json with policy now
+2022-03-30 11:40:09,878 DEBUG   SenderThread:291824 [sender.py:send():235] send: history
+2022-03-30 11:40:09,878 DEBUG   SenderThread:291824 [sender.py:send():235] send: summary
+2022-03-30 11:40:09,878 INFO    SenderThread:291824 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-30 11:40:09,879 DEBUG   SenderThread:291824 [sender.py:send():235] send: stats
+2022-03-30 11:40:09,879 DEBUG   SenderThread:291824 [sender.py:send():235] send: config
+2022-03-30 11:40:09,880 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: log_artifact
+2022-03-30 11:40:10,643 INFO    Thread-24 :291824 [upload_job.py:push():137] Uploaded file /tmp/tmp6uvvc320wandb/tz1tfw04-media/table/ROC Curve_table_1_f3966126d7de1fa84cb3.table.json
+2022-03-30 11:40:10,684 INFO    Thread-7  :291824 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/wandb-summary.json
+2022-03-30 11:40:12,469 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:40:17,573 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:40:22,659 INFO    Thread-26 :291824 [upload_job.py:push():95] Uploaded file /home/ubuntu/.cache/wandb/artifacts/obj/md5/db/79213f606dd10df79369ca3320e80a
+2022-03-30 11:40:22,674 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:40:24,354 INFO    SenderThread:291824 [sender.py:send_request_log_artifact():976] logged artifact run-2qkhoecv-PrecisionRecall_table - {'id': 'QXJ0aWZhY3Q6MTA2NjE3NzQ5', 'digest': 'edb4dfe74fb5f2f37d79950ccc5f008a', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NTIzMjI3', 'latestArtifact': None}, 'version': 'latest'}
+2022-03-30 11:40:24,354 DEBUG   SenderThread:291824 [sender.py:send():235] send: files
+2022-03-30 11:40:24,355 INFO    SenderThread:291824 [sender.py:_save_file():947] saving file media/table/Precision-Recall_table_2_433d450f11f42e333204.table.json with policy now
+2022-03-30 11:40:24,358 DEBUG   SenderThread:291824 [sender.py:send():235] send: history
+2022-03-30 11:40:24,358 DEBUG   SenderThread:291824 [sender.py:send():235] send: summary
+2022-03-30 11:40:24,360 INFO    SenderThread:291824 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-30 11:40:24,360 DEBUG   SenderThread:291824 [sender.py:send():235] send: stats
+2022-03-30 11:40:24,361 DEBUG   SenderThread:291824 [sender.py:send():235] send: stats
+2022-03-30 11:40:24,361 DEBUG   SenderThread:291824 [sender.py:send():235] send: config
+2022-03-30 11:40:24,361 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: log_artifact
+2022-03-30 11:40:24,695 INFO    Thread-7  :291824 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/wandb-summary.json
+2022-03-30 11:40:25,085 INFO    Thread-27 :291824 [upload_job.py:push():137] Uploaded file /tmp/tmp6uvvc320wandb/1z28f1k4-media/table/Precision-Recall_table_2_433d450f11f42e333204.table.json
+2022-03-30 11:40:27,778 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:40:32,879 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:40:37,981 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:40:43,084 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:40:48,186 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:40:53,290 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:40:58,393 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:41:03,497 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:41:08,600 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:41:13,704 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:41:16,924 ERROR   Thread-29 :291824 [internal_api.py:upload_file():1612] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/sanderele1/beans-tabular-University-of-Stavanger/wandb_artifacts/17523241/106617811/51603c8f6c572d2e196ceb0617fdb13a?Expires=1648726863&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=akFeJWAsKbbOfG8F41QBrIL9jZiK%2FOYtWx7VNPUHK7xFSXOFPDzDj70zCuThF%2BPRwuIyFnGJRtC1V2YqVIAoorJ2sqLHjS%2B6lXa7guGuTX%2Bw3Xt4rodVTnC%2BTdmqsxtvUrpHNwRdUk2EIbROwHCf8NpcV7Squm3tEYVWdN5OuPsj6eBVDKP5J%2Frd8wjHpPBFVaR7kLPjvVqRdvDbq5qWiJ2A81jsMPpdcvIHv4P00gD9GXgOuJKnC3ndAT18y6MMw2YfdvB77%2BjWvLNc%2FuqU9Y7elYjZ6RdKccBSzN9iecsRUmoe1nmX6bs1NviOqrS4pFHWA9dN%2FOvXTWSnBgy2bQ%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/sanderele1/beans-tabular-University-of-Stavanger/wandb_artifacts/17523241/106617811/51603c8f6c572d2e196ceb0617fdb13a?Expires=1648726863&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=akFeJWAsKbbOfG8F41QBrIL9jZiK%2FOYtWx7VNPUHK7xFSXOFPDzDj70zCuThF%2BPRwuIyFnGJRtC1V2YqVIAoorJ2sqLHjS%2B6lXa7guGuTX%2Bw3Xt4rodVTnC%2BTdmqsxtvUrpHNwRdUk2EIbROwHCf8NpcV7Squm3tEYVWdN5OuPsj6eBVDKP5J%2Frd8wjHpPBFVaR7kLPjvVqRdvDbq5qWiJ2A81jsMPpdcvIHv4P00gD9GXgOuJKnC3ndAT18y6MMw2YfdvB77%2BjWvLNc%2FuqU9Y7elYjZ6RdKccBSzN9iecsRUmoe1nmX6bs1NviOqrS4pFHWA9dN%2FOvXTWSnBgy2bQ%3D%3D (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f868c2f6cd0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2022-03-30 11:41:16,925 ERROR   Thread-29 :291824 [internal_api.py:upload_file():1614] upload_file request headers: {'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'UWA8j2xXLS4ZbOsGF/2xOg==', 'Content-Type': 'application/json', 'Content-Length': '981'}
+2022-03-30 11:41:16,925 ERROR   Thread-29 :291824 [internal_api.py:upload_file():1616] upload_file response body: 
+2022-03-30 11:41:18,513 INFO    Thread-29 :291824 [upload_job.py:push():95] Uploaded file /home/ubuntu/.cache/wandb/artifacts/obj/md5/51/603c8f6c572d2e196ceb0617fdb13a
+2022-03-30 11:41:18,807 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:41:19,754 INFO    SenderThread:291824 [sender.py:send_request_log_artifact():976] logged artifact run-2qkhoecv-FeatureImportance_table - {'id': 'QXJ0aWZhY3Q6MTA2NjE3ODEx', 'digest': 'f7ebfd1d3badef3bd14cd78d60d9f5c0', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NTIzMjQx', 'latestArtifact': None}, 'version': 'latest'}
+2022-03-30 11:41:20,033 DEBUG   SenderThread:291824 [sender.py:send():235] send: files
+2022-03-30 11:41:20,033 INFO    SenderThread:291824 [sender.py:_save_file():947] saving file media/table/Feature Importance_table_3_565d7590ee1f298cd1cd.table.json with policy now
+2022-03-30 11:41:20,035 DEBUG   SenderThread:291824 [sender.py:send():235] send: history
+2022-03-30 11:41:20,035 DEBUG   SenderThread:291824 [sender.py:send():235] send: summary
+2022-03-30 11:41:20,037 INFO    SenderThread:291824 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-30 11:41:20,037 DEBUG   SenderThread:291824 [sender.py:send():235] send: telemetry
+2022-03-30 11:41:20,037 DEBUG   SenderThread:291824 [sender.py:send():235] send: telemetry
+2022-03-30 11:41:20,037 DEBUG   SenderThread:291824 [sender.py:send():235] send: stats
+2022-03-30 11:41:20,038 DEBUG   SenderThread:291824 [sender.py:send():235] send: exit
+2022-03-30 11:41:20,038 INFO    SenderThread:291824 [sender.py:send_exit():371] handling exit code: 0
+2022-03-30 11:41:20,038 INFO    SenderThread:291824 [sender.py:send_exit():373] handling runtime: 7
+2022-03-30 11:41:20,039 INFO    SenderThread:291824 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-30 11:41:20,039 INFO    SenderThread:291824 [sender.py:send_exit():379] send defer
+2022-03-30 11:41:20,039 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:20,039 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: defer
+2022-03-30 11:41:20,042 INFO    HandlerThread:291824 [handler.py:handle_request_defer():164] handle defer: 0
+2022-03-30 11:41:20,042 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:20,043 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:20,043 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:20,044 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:20,044 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:20,044 DEBUG   SenderThread:291824 [sender.py:send():235] send: stats
+2022-03-30 11:41:20,045 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:20,045 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:20,045 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:20,046 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:20,047 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:20,047 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:20,047 DEBUG   SenderThread:291824 [sender.py:send():235] send: stats
+2022-03-30 11:41:20,048 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:20,048 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:20,048 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:20,049 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: defer
+2022-03-30 11:41:20,050 INFO    SenderThread:291824 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-03-30 11:41:20,050 INFO    SenderThread:291824 [sender.py:transition_state():392] send defer: 1
+2022-03-30 11:41:20,050 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: defer
+2022-03-30 11:41:20,050 INFO    HandlerThread:291824 [handler.py:handle_request_defer():164] handle defer: 1
+2022-03-30 11:41:20,129 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: defer
+2022-03-30 11:41:20,129 INFO    SenderThread:291824 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-03-30 11:41:20,129 INFO    SenderThread:291824 [sender.py:transition_state():392] send defer: 2
+2022-03-30 11:41:20,129 DEBUG   SenderThread:291824 [sender.py:send():235] send: stats
+2022-03-30 11:41:20,130 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: defer
+2022-03-30 11:41:20,130 INFO    HandlerThread:291824 [handler.py:handle_request_defer():164] handle defer: 2
+2022-03-30 11:41:20,130 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: defer
+2022-03-30 11:41:20,131 INFO    SenderThread:291824 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-03-30 11:41:20,131 INFO    SenderThread:291824 [sender.py:transition_state():392] send defer: 3
+2022-03-30 11:41:20,131 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: defer
+2022-03-30 11:41:20,131 INFO    HandlerThread:291824 [handler.py:handle_request_defer():164] handle defer: 3
+2022-03-30 11:41:20,131 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: defer
+2022-03-30 11:41:20,132 INFO    SenderThread:291824 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-03-30 11:41:20,132 INFO    SenderThread:291824 [sender.py:transition_state():392] send defer: 4
+2022-03-30 11:41:20,132 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: defer
+2022-03-30 11:41:20,132 INFO    HandlerThread:291824 [handler.py:handle_request_defer():164] handle defer: 4
+2022-03-30 11:41:20,133 DEBUG   SenderThread:291824 [sender.py:send():235] send: summary
+2022-03-30 11:41:20,134 INFO    SenderThread:291824 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-30 11:41:20,134 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: defer
+2022-03-30 11:41:20,134 INFO    SenderThread:291824 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-03-30 11:41:20,134 INFO    SenderThread:291824 [sender.py:transition_state():392] send defer: 5
+2022-03-30 11:41:20,135 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: defer
+2022-03-30 11:41:20,135 INFO    HandlerThread:291824 [handler.py:handle_request_defer():164] handle defer: 5
+2022-03-30 11:41:20,135 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: defer
+2022-03-30 11:41:20,135 INFO    SenderThread:291824 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-03-30 11:41:20,150 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:41:20,500 INFO    SenderThread:291824 [sender.py:transition_state():392] send defer: 6
+2022-03-30 11:41:20,500 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:20,501 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: defer
+2022-03-30 11:41:20,501 INFO    HandlerThread:291824 [handler.py:handle_request_defer():164] handle defer: 6
+2022-03-30 11:41:20,501 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: defer
+2022-03-30 11:41:20,502 INFO    SenderThread:291824 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-03-30 11:41:20,502 INFO    SenderThread:291824 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-03-30 11:41:20,602 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:41:20,716 INFO    Thread-30 :291824 [upload_job.py:push():137] Uploaded file /tmp/tmp6uvvc320wandb/2gmdvr2t-media/table/Feature Importance_table_3_565d7590ee1f298cd1cd.table.json
+2022-03-30 11:41:20,723 INFO    SenderThread:291824 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/config.yaml
+2022-03-30 11:41:20,724 INFO    SenderThread:291824 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/wandb-summary.json
+2022-03-30 11:41:20,724 INFO    SenderThread:291824 [dir_watcher.py:finish():313] scan: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files
+2022-03-30 11:41:20,724 INFO    SenderThread:291824 [dir_watcher.py:finish():327] scan save: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/requirements.txt requirements.txt
+2022-03-30 11:41:20,724 INFO    SenderThread:291824 [dir_watcher.py:finish():327] scan save: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/wandb-metadata.json wandb-metadata.json
+2022-03-30 11:41:20,725 INFO    SenderThread:291824 [dir_watcher.py:finish():327] scan save: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/config.yaml config.yaml
+2022-03-30 11:41:20,725 INFO    SenderThread:291824 [dir_watcher.py:finish():327] scan save: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/wandb-summary.json wandb-summary.json
+2022-03-30 11:41:20,725 INFO    SenderThread:291824 [dir_watcher.py:finish():327] scan save: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/output.log output.log
+2022-03-30 11:41:20,725 INFO    SenderThread:291824 [dir_watcher.py:finish():327] scan save: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/media/table/ROC Curve_table_1_f3966126d7de1fa84cb3.table.json media/table/ROC Curve_table_1_f3966126d7de1fa84cb3.table.json
+2022-03-30 11:41:20,725 INFO    SenderThread:291824 [dir_watcher.py:finish():327] scan save: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/media/table/Precision-Recall_table_2_433d450f11f42e333204.table.json media/table/Precision-Recall_table_2_433d450f11f42e333204.table.json
+2022-03-30 11:41:20,726 INFO    SenderThread:291824 [dir_watcher.py:finish():327] scan save: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/media/table/Feature Importance_table_3_565d7590ee1f298cd1cd.table.json media/table/Feature Importance_table_3_565d7590ee1f298cd1cd.table.json
+2022-03-30 11:41:20,726 INFO    SenderThread:291824 [dir_watcher.py:finish():327] scan save: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/media/table/confusion Matrix_table_0_ed1cb8f6322f1ad8d43e.table.json media/table/confusion Matrix_table_0_ed1cb8f6322f1ad8d43e.table.json
+2022-03-30 11:41:20,726 INFO    SenderThread:291824 [sender.py:transition_state():392] send defer: 7
+2022-03-30 11:41:20,726 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:20,726 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: defer
+2022-03-30 11:41:20,727 INFO    HandlerThread:291824 [handler.py:handle_request_defer():164] handle defer: 7
+2022-03-30 11:41:20,727 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: defer
+2022-03-30 11:41:20,727 INFO    SenderThread:291824 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-03-30 11:41:20,728 INFO    SenderThread:291824 [file_pusher.py:finish():145] shutting down file pusher
+2022-03-30 11:41:20,828 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:41:20,828 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:20,930 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:41:20,930 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:21,032 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:41:21,032 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:21,134 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:41:21,134 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:21,236 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:41:21,236 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:21,338 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:41:21,338 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:21,440 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:41:21,440 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:21,466 INFO    Thread-32 :291824 [upload_job.py:push():137] Uploaded file /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/config.yaml
+2022-03-30 11:41:21,471 INFO    Thread-31 :291824 [upload_job.py:push():137] Uploaded file /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/requirements.txt
+2022-03-30 11:41:21,474 INFO    Thread-34 :291824 [upload_job.py:push():137] Uploaded file /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/output.log
+2022-03-30 11:41:21,542 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:41:21,542 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:21,634 INFO    Thread-33 :291824 [upload_job.py:push():137] Uploaded file /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/files/wandb-summary.json
+2022-03-30 11:41:21,644 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:41:21,644 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:21,745 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:41:21,746 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:21,835 INFO    Thread-6  :291824 [sender.py:transition_state():392] send defer: 8
+2022-03-30 11:41:21,836 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: defer
+2022-03-30 11:41:21,836 INFO    HandlerThread:291824 [handler.py:handle_request_defer():164] handle defer: 8
+2022-03-30 11:41:21,836 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: defer
+2022-03-30 11:41:21,836 INFO    SenderThread:291824 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-03-30 11:41:21,847 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:41:22,569 INFO    SenderThread:291824 [sender.py:transition_state():392] send defer: 9
+2022-03-30 11:41:22,570 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:22,571 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: defer
+2022-03-30 11:41:22,571 INFO    HandlerThread:291824 [handler.py:handle_request_defer():164] handle defer: 9
+2022-03-30 11:41:22,572 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: defer
+2022-03-30 11:41:22,572 INFO    SenderThread:291824 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-03-30 11:41:22,573 INFO    SenderThread:291824 [sender.py:transition_state():392] send defer: 10
+2022-03-30 11:41:22,573 DEBUG   SenderThread:291824 [sender.py:send():235] send: final
+2022-03-30 11:41:22,574 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: defer
+2022-03-30 11:41:22,574 INFO    HandlerThread:291824 [handler.py:handle_request_defer():164] handle defer: 10
+2022-03-30 11:41:22,574 DEBUG   SenderThread:291824 [sender.py:send():235] send: footer
+2022-03-30 11:41:22,575 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: defer
+2022-03-30 11:41:22,575 INFO    SenderThread:291824 [sender.py:send_request_defer():388] handle sender defer: 10
+2022-03-30 11:41:22,673 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-30 11:41:22,673 DEBUG   SenderThread:291824 [sender.py:send_request():249] send_request: poll_exit
+2022-03-30 11:41:22,673 INFO    SenderThread:291824 [file_pusher.py:join():150] waiting for file pusher
+2022-03-30 11:41:22,982 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: sampled_history
+2022-03-30 11:41:22,984 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: get_summary
+2022-03-30 11:41:22,986 DEBUG   HandlerThread:291824 [handler.py:handle_request():141] handle_request: shutdown
+2022-03-30 11:41:22,986 INFO    HandlerThread:291824 [handler.py:finish():778] shutting down handler
+2022-03-30 11:41:23,574 INFO    WriterThread:291824 [datastore.py:close():281] close: /home/ubuntu/project/ml/wandb/run-20220330_113957-2qkhoecv/run-2qkhoecv.wandb
+2022-03-30 11:41:23,881 INFO    SenderThread:291824 [sender.py:finish():1078] shutting down sender
+2022-03-30 11:41:23,882 INFO    SenderThread:291824 [file_pusher.py:finish():145] shutting down file pusher
+2022-03-30 11:41:23,882 INFO    SenderThread:291824 [file_pusher.py:join():150] waiting for file pusher
+2022-03-30 11:41:23,884 INFO    MainThread:291824 [internal.py:handle_exit():82] Internal process exited

@@ -1,0 +1,3 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Config item 'max_depth' was locked by 'sweep' (ignored update).
+[34m[1mwandb[39m[22m: [33mWARNING[39m Config item 'n_estimators' was locked by 'sweep' (ignored update).
+wandb: Network error (ConnectionError), entering retry loop.

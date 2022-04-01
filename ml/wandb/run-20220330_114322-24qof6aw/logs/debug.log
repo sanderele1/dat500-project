@@ -1,0 +1,116 @@
+2022-03-30 11:43:22,609 INFO    Thread-117:291666 [wandb_setup.py:_flush():75] Loading settings from /home/ubuntu/.config/wandb/settings
+2022-03-30 11:43:22,609 INFO    Thread-117:291666 [wandb_setup.py:_flush():75] Loading settings from wandb/settings
+2022-03-30 11:43:22,609 INFO    Thread-117:291666 [wandb_setup.py:_flush():75] Loading settings from environment variables: {'project': 'beans-tabular-University-of-Stavanger', 'entity': 'sanderele1', 'root_dir': '/home/ubuntu/project/ml', 'run_id': '24qof6aw', 'sweep_param_path': '/home/ubuntu/project/ml/wandb/sweep-k0ph9jy4/config-24qof6aw.yaml', 'sweep_id': 'k0ph9jy4'}
+2022-03-30 11:43:22,609 INFO    Thread-117:291666 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-03-30 11:43:22,609 INFO    Thread-117:291666 [wandb_init.py:_log_setup():405] Logging user logs to /home/ubuntu/project/ml/wandb/run-20220330_114322-24qof6aw/logs/debug.log
+2022-03-30 11:43:22,609 INFO    Thread-117:291666 [wandb_init.py:_log_setup():406] Logging internal logs to /home/ubuntu/project/ml/wandb/run-20220330_114322-24qof6aw/logs/debug-internal.log
+2022-03-30 11:43:22,610 INFO    Thread-117:291666 [wandb_init.py:_jupyter_setup():355] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f11df1b2460>
+2022-03-30 11:43:22,610 INFO    Thread-117:291666 [wandb_init.py:init():439] calling init triggers
+2022-03-30 11:43:22,610 INFO    Thread-117:291666 [wandb_init.py:init():442] wandb.init called with sweep_config: {'max_depth': 87, 'n_estimators': 347}
+config: {}
+2022-03-30 11:43:22,610 INFO    Thread-117:291666 [wandb_init.py:init():492] starting backend
+2022-03-30 11:43:22,610 INFO    Thread-117:291666 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-03-30 11:43:22,617 INFO    Thread-117:291666 [backend.py:ensure_launched():219] starting backend process...
+2022-03-30 11:43:22,632 INFO    Thread-117:291666 [backend.py:ensure_launched():224] started backend process with pid: 292150
+2022-03-30 11:43:22,635 INFO    Thread-117:291666 [wandb_init.py:init():501] backend started and connected
+2022-03-30 11:43:22,657 INFO    Thread-117:291666 [wandb_run.py:_config_callback():992] config_cb None None {'max_depth': 87, 'n_estimators': 347}
+2022-03-30 11:43:22,663 INFO    Thread-117:291666 [wandb_run.py:_label_probe_notebook():947] probe notebook
+2022-03-30 11:43:22,663 INFO    Thread-117:291666 [wandb_run.py:_label_probe_notebook():957] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2022-03-30 11:43:22,663 INFO    Thread-117:291666 [wandb_init.py:init():565] updated telemetry
+2022-03-30 11:43:22,749 INFO    Thread-117:291666 [wandb_init.py:init():596] communicating run to backend with 30 second timeout
+2022-03-30 11:43:27,415 INFO    Thread-117:291666 [wandb_run.py:_on_init():1759] communicating current version
+2022-03-30 11:43:27,524 INFO    Thread-117:291666 [wandb_run.py:_on_init():1763] got version response 
+2022-03-30 11:43:27,525 INFO    Thread-117:291666 [wandb_init.py:init():625] starting run threads in backend
+2022-03-30 11:43:27,697 INFO    Thread-117:291666 [wandb_run.py:_console_start():1733] atexit reg
+2022-03-30 11:43:27,698 INFO    Thread-117:291666 [wandb_run.py:_redirect():1606] redirect: SettingsConsole.WRAP
+2022-03-30 11:43:27,698 INFO    Thread-117:291666 [wandb_run.py:_redirect():1643] Wrapping output streams.
+2022-03-30 11:43:27,699 INFO    Thread-117:291666 [wandb_run.py:_redirect():1667] Redirects installed.
+2022-03-30 11:43:27,700 INFO    Thread-117:291666 [wandb_init.py:init():664] run started, returning control to user process
+2022-03-30 11:43:27,700 INFO    Thread-117:291666 [wandb_config.py:__setitem__():153] config set model_type = random_forest - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f11df15c8e0>>
+2022-03-30 11:43:27,700 INFO    Thread-117:291666 [wandb_run.py:_config_callback():992] config_cb model_type random_forest None
+2022-03-30 11:43:27,709 INFO    Thread-117:291666 [wandb_run.py:_config_callback():992] config_cb None None {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_features': 'auto', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}
+2022-03-30 11:45:36,518 ERROR   Thread-62 :291666 [retry.py:__call__():126] Retry attempt failed:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 996, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 314, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 171, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x7f11df13c370>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f11df13c370>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 102, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 140, in execute
+    return self.client.execute(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f11df13c370>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2022-03-30 11:46:58,685 INFO    Thread-117:291666 [wandb_run.py:finish():1539] finishing run sanderele1/beans-tabular-University-of-Stavanger/24qof6aw
+2022-03-30 11:46:58,737 INFO    Thread-117:291666 [jupyter.py:save_history():429] not saving jupyter history
+2022-03-30 11:46:58,746 INFO    Thread-117:291666 [jupyter.py:save_ipynb():374] not saving jupyter notebook
+2022-03-30 11:46:58,746 INFO    Thread-117:291666 [wandb_init.py:_jupyter_teardown():337] cleaning up jupyter logic
+2022-03-30 11:46:58,747 INFO    Thread-117:291666 [wandb_run.py:_atexit_cleanup():1702] got exitcode: 0
+2022-03-30 11:46:58,928 INFO    Thread-117:291666 [wandb_run.py:_restore():1674] restore
+2022-03-30 11:47:06,319 INFO    Thread-117:291666 [wandb_run.py:_on_finish():1831] got exit ret: None
+2022-03-30 11:47:11,554 INFO    Thread-117:291666 [wandb_run.py:_on_finish():1831] got exit ret: None
+2022-03-30 11:47:17,183 INFO    Thread-117:291666 [wandb_run.py:_on_finish():1831] got exit ret: None
+2022-03-30 11:47:22,737 INFO    Thread-117:291666 [wandb_run.py:_on_finish():1831] got exit ret: None
+2022-03-30 11:47:28,364 INFO    Thread-117:291666 [wandb_run.py:_on_finish():1831] got exit ret: None
+2022-03-30 11:47:34,682 INFO    Thread-117:291666 [wandb_run.py:_on_finish():1831] got exit ret: None
+2022-03-30 11:47:42,213 INFO    Thread-117:291666 [wandb_run.py:_on_finish():1831] got exit ret: None
+2022-03-30 11:47:50,019 INFO    Thread-117:291666 [wandb_run.py:_on_finish():1831] got exit ret: None
+2022-03-30 11:48:05,194 INFO    Thread-117:291666 [wandb_run.py:_on_finish():1831] got exit ret: None
+2022-03-30 11:48:14,596 INFO    Thread-117:291666 [wandb_run.py:_on_finish():1831] got exit ret: None
+2022-03-30 11:48:22,782 INFO    Thread-117:291666 [wandb_run.py:_on_finish():1831] got exit ret: None
+2022-03-30 11:48:29,545 INFO    Thread-117:291666 [wandb_run.py:_on_finish():1831] got exit ret: None
+2022-03-30 11:48:35,647 INFO    Thread-117:291666 [wandb_run.py:_on_finish():1831] got exit ret: None
+2022-03-30 11:48:42,061 INFO    Thread-117:291666 [wandb_run.py:_on_finish():1831] got exit ret: None
+2022-03-30 11:48:48,461 INFO    Thread-117:291666 [wandb_run.py:_on_finish():1831] got exit ret: None
+2022-03-30 11:48:55,140 INFO    Thread-117:291666 [wandb_run.py:_on_finish():1831] got exit ret: None
+2022-03-30 11:49:02,175 INFO    Thread-117:291666 [wandb_run.py:_on_finish():1831] got exit ret: None
+2022-03-30 11:49:11,101 INFO    Thread-117:291666 [wandb_run.py:_on_finish():1831] got exit ret: None
+2022-03-30 11:49:15,731 INFO    Thread-117:291666 [wandb_run.py:_restore():1674] restore

@@ -1,0 +1,12 @@
+Init - DSS:
+Initializes/runs a lot (for each character added?)
+Init - DLS:
+Only runs once
+Has_key - DLS:
+Runs for each sequence/read
+Insert - DLS:
+Runs for each sequence/read
+Insert - DSS:
+Runs for each bp (each character)
+Get - DSS:
+Runs in query for each hash(ish)
