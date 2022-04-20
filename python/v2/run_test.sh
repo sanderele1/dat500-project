@@ -1,0 +1,1 @@
+python3 hbase_insert.py -r inline hadoop_test --output-dir test.out

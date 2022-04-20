@@ -1,0 +1,1 @@
+python3 hbase_insert.py --table hbase_salmonella_windowed --hadoop-streaming-jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.3.1.jar -r hadoop hdfs:///files/salmonella/window.b64pickled --output-dir hdfs:///files/salmonella/thrash --files hbase_connector.py
