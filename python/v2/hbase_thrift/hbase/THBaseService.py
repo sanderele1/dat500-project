@@ -1604,7 +1604,8 @@ class Client(Iface):
 
         """
         self.send_tableExists(tableName)
-        return self.recv_tableExists()
+        resp = self.recv_tableExists()
+        return resp
 
     def send_tableExists(self, tableName):
         self._oprot.writeMessageBegin('tableExists', TMessageType.CALL, self._seqid)
@@ -1622,6 +1623,7 @@ class Client(Iface):
             x.read(iprot)
             iprot.readMessageEnd()
             raise x
+        
         result = tableExists_result()
         result.read(iprot)
         iprot.readMessageEnd()

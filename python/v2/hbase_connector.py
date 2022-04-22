@@ -73,7 +73,7 @@ class HBaseDictListStorage(ds.storage.OrderedStorage):
         
         retries = 0
         max_retries = 10
-        
+    
         while needs_create_table and retries < max_retries:
             try:
                 with self._pool as c:
@@ -82,7 +82,7 @@ class HBaseDictListStorage(ds.storage.OrderedStorage):
                 message = e.message.decode('utf8')
                 if not message.startswith('org.apache.hadoop.hbase.TableNotFoundException'):
                     raise e
-                        
+    
             if needs_create_table:
                 ###print(f"Finished sleeping, attempting to create table ({retries}/{max_retries} retries): {self._name}")
                 
@@ -213,6 +213,9 @@ def override_lsh__init__(self, threshold=0.9, num_perm=128, weights=(0.5, 0.5),
         if sum(weights) != 1.0:
             raise ValueError("Weights must sum to 1.0")
         self.h = num_perm
+    
+        
+        
         if params is not None:
             self.b, self.r = params
             if self.b * self.r > num_perm:
@@ -226,7 +229,8 @@ def override_lsh__init__(self, threshold=0.9, num_perm=128, weights=(0.5, 0.5),
                     false_positive_weight, false_negative_weight)
 
         self.prepickle = storage_config['type'] == 'redis' if prepickle is None else prepickle
-
+        
+        
         self.hashfunc = hashfunc
         if hashfunc:
             self._H = self._hashed_byteswap
