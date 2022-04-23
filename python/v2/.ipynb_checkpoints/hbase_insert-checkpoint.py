@@ -32,23 +32,31 @@ class HbaseInsertJob(MRJob):
         else:
             table = b'default_table'
 
-        self.lsh = ds.lsh.MinHashLSH(storage_config={'type': 'hbase', 'basename': table, 'hbase_pool': self.pool}, prepickle=True)
+        self.lsh = ds.lsh.MinHashLSH(threshold=0.8, num_perm=128, storage_config={'type': 'hbase', 'basename': table, 'hbase_pool': self.pool}, prepickle=True)
         self.buffer = []
 
     def insert(self):
         if len(self.buffer) <= 0:
             return
 
-        def create_hash(string):
-            mh2 = ds.MinHash()
-            for i in range(3, len(string)):
-                v = string[i-3:i]
-                mh2.update(v.encode('utf8'))
+        #def create_hash(string):
+        #    mh2 = ds.MinHash()
+        #    for i in range(3, len(string)):
+        #        v = string[i-3:i]
+        #        mh2.update(v.encode('utf8'))
+        #    return mh2
+
+        def create_hash(string, num_perm=128):
+            mh2 = ds.MinHash(num_perm=num_perm)
+            for i, c in enumerate(string):
+                mh2.update(i.to_bytes(8, byteorder='little') + c.encode('utf8'))
             return mh2
 
+        
+        
         with self.lsh.insertion_session() as sess:
             for key, value in self.buffer:
-                sess.insert((key, value), create_hash(value))
+                sess.insert((key, value), create_hash(value, 256), check_duplication=False)
         self.buffer.clear()
 
 
