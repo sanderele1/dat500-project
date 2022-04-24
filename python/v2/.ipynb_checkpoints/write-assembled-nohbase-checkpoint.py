@@ -34,8 +34,9 @@ def run_buffer(buffer):
 
 class CanMrJobDoThis(MRJob):
     
-    INPUT_PROTOCOL = mrjob.protocol.JSONValueProtocol
-    OUTPUT_PROTOCOL = mrjob.protocol.JSONValueProtocol
+    INPUT_PROTOCOL = mrjob.protocol.PickleProtocol
+    INTERNAL_PROTOCOL = mrjob.protocol.PickleProtocol
+    OUTPUT_PROTOCOL = mrjob.protocol.JSONProtocol
     
     def mapper_init(self):
         pass
@@ -62,15 +63,16 @@ class CanMrJobDoThis(MRJob):
             # We could have used atomicincrement instead, which would probably have been much faster. But that will fail if something crashes. As we have no idea how far it got.
             for i, base in enumerate(read_value):
                 base_position = match_index + i
-                yield base_position, [base]
+                yield f"{base_position}", [base]
                 
     def combiner(self, key, values):
-        return key, [*v for v in values]
+        yield key, [item for sublist in values for item in sublist]
     
     def reducer(self, key, values):
-        return key, [*v for v in values]
-        
+        yield key, [item for sublist in values for item in sublist]
+    
 if __name__ == '__main__':
     #mp.set_start_method('spawn')
     CanMrJobDoThis.run()
     
+# python3 write-assembled-nohbase.py --hadoop-streaming-jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.3.1.jar -r hadoop hdfs:///files/salmonella/matches_v8 --files hbase_connector.py,gasm.cpython-38-x86_64-linux-gnu.so --output-dir hdfs:///files/salmonella/grouped_positions
